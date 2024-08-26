@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Lautaro FarIas" />
+        <meta name="description" content="crea tu propio sitio web" />
+        <meta name="keywords" content="web, diseño, página, website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="../icons/favicon.ico" />
+
+        <title>Diseño de sitios web</title>
+
+        <link href="./output.css" rel="stylesheet" />
+    </head>
+    <body class="bg-[#FAFAFA] transition-colors duration-150 text-coal flex flex-col justify-center items-center">
+        <!-- NAV -->
+        <header
+            class="bg-white w-full text-primary fixed top-0 left-0 flex flex-row justify-center items-center py-2 transition-colors duration-150 sm:bg-white sm:gap-12 md:gap-20 z-[99]"
+        >
+            <div class="flex flex-row justify-between items-center w-full max-w-[1600px] px-4 lg:px-12 xl:px-32">
+                <div id="cover" class="w-full h-full fixed top-0 right-0 bg-[#00000094] z-[100] hidden sm:hidden"></div>
+
+                <a class="font-bold text-2xl lg:text-4xl" href="#"> Cosme.</a>
+                <nav
+                    id="no-scroll"
+                    class="fixed h-screen w-screen top-0 left-0 -translate-x-full sm:translate-x-0 sm:relative sm:h-auto sm:flex sm:flex-row sm:w-full z-[99999999999]"
+                >
+                    <div
+                        id="nav-list"
+                        class="bg-main-gradient h-full w-4/5 max-w-72 py-4 px-4 flex flex-col justify-start items-start sm:max-w-none sm:justify-between sm:items-center text-coal sm:bg-none sm:w-full sm:p-0"
+                    >
+                        <img class="h-auto w-full mx-auto sm:hidden" src="../icons/logo-full-primary.svg" alt="" />
+                        <ul
+                            class="mt-8 flex flex-col w-full sm:flex-row sm:mt-0 sm:justify-center sm:gap-4 md:gap-10 lg:gap-12"
+                        >
+                            <li
+                                class="flex justify-start items-center h-14 hover:cursor-pointer border-b border-coal sm:border-none"
+                            >
+                                <a class="inline-block w-full hover:text-primary" href="#inicio">Inicio</a>
+                            </li>
+                            <li
+                                class="flex justify-start items-center h-14 hover:cursor-pointer border-b border-coal sm:border-none"
+                            >
+                                <a class="inline-block w-full hover:text-primary" href="#servicios">Servicios</a>
+                            </li>
+                            <li
+                                class="flex justify-start items-center h-14 hover:cursor-pointer border-b border-coal sm:border-none"
+                            >
+                                <a class="inline-block w-full hover:text-primary" href="#nosotros">Nosotros</a>
+                            </li>
+                            <li class="flex justify-start items-center h-14 hover:cursor-pointer">
+                                <a class="inline-block w-full hover:text-primary" href="#contacto">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <button
+                    class="hidden p-4 rounded-md sm:inline-block bg-primary text-white hover:bg-primary-400 transition-colors duration-300"
+                >
+                    ¡Hablemos!
+                </button>
+                <button id="toggle-nav" class="w-11 h-11 sm:hidden z-[200]">
+                    <img class="w-9 h-9 inline-block m-auto" src="../icons/open-menu.svg" alt="Descripción del SVG" />
+                    <img
+                        class="w-9 h-9 m-auto hidden text-primary"
+                        src="../icons/close-menu.svg"
+                        alt="Descripción del SVG"
+                    />
+                </button>
+            </div>
+        </header>
+        <!-- INICIO -->
+        <main
+            id="inicio"
+            class="flex flex-col items-center max-w-[1600px] mt-20 lg:mt-32 space-y-5 sm:py-10 sm:space-y-9 px-8 sm:px-12 lg:px-20 xl:px-32"
+        >
+            <div class="flex flex-row">
+                <div
+                    class="flex flex-col items-center justify-center space-y-8 lg:space-y-4 text-center lg:text-start lg:justify-start lg:items-start lg:w-1/2"
+                >
+                    <h1
+                        class="relative font-semibold z-20 text-4xl lg:text-3xl leading-[3.1rem] sm:leading-[4rem] lg:leading-[3rem] sm:text-[2.5rem] lg:align-bottom lg:flex lg:flex-row lg:justify-center lg:items-center"
+                    >
+                        Sitios web para personas que marcan la diferencia.
+                    </h1>
+                    <div class="hidden lg:flex flex-row items-center w-full">
+                        <span class="w-full h-[1px] bg-primary"></span>
+                        <img class="h-4 w-auto" src="../images/logo-cosme-100px.png" alt="Logo de Cosme" />
+                        <span class="w-full h-[1px] bg-primary"></span>
+                    </div>
+                    <h2 class="hidden lg:inline-block text-base sm:text-lg">
+                        <span class="text-primary font-bold">Cosme™ </span>
+                        es una agencia de desarrollo web que fusiona estrategia, diseño e innovación digital. Nuestro
+                        objetivo es conectar e impactar a través de la creatividad, la tecnología y experiencias de
+                        marca únicas
+                    </h2>
+                    <button
+                        class="hidden lg:inline-block bg-primary w-full sm:w-3/4 lg:w-1/2 text-white font-bold py-3 px-6 rounded-md shadow-lg hover:bg-primary-400 transition-all duration-300"
+                    >
+                        Trabajemos juntos
+                    </button>
+                </div>
+                <div class="hidden lg:inline-block w-1/2">
+                    <img class="" src="../images/hero.svg" alt="Ilustración de desarrollo web" />
+                </div>
+            </div>
+            <div class="flex flex-row items-center w-full lg:hidden">
+                <span class="w-full h-[1px] bg-primary"></span>
+                <img class="h-5 sm:h-6 w-auto" src="../images/logo-cosme-100px.png" alt="Logo de Cosme" />
+                <span class="w-full h-[1px] bg-primary"></span>
+            </div>
+            <h2 class="lg:hidden text-center text-base sm:text-lg">
+                <span class="text-primary font-bold">Cosme™ </span>
+                es una agencia de desarrollo web que fusiona estrategia, diseño e innovación digital. Nuestro objetivo
+                es conectar e impactar a través de la creatividad, la tecnología y experiencias de marca únicas
+            </h2>
+            <button
+                class="lg:hidden bg-primary w-full sm:w-3/4 text-white font-bold py-3 px-6 rounded-md shadow-lg hover:bg-primary-400 transition-all duration-300"
+            >
+                Trabajemos juntos
+            </button>
+            <img class="sm:max-w-[600px] lg:hidden" src="../images/hero.svg" alt="Ilustración de desarrollo web" />
+        </main>
+        <!-- DIVIDER -->
+        <div class="relative w-full overflow-hidden flex flex-col justify-start my-6">
+            <svg
+                class="w-full h-20 sm:h-24 md:h-36 lg:h-40 xl:h-36"
+                viewBox="0 0 686 211"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="none"
+            >
+                <path
+                    d="M0.00431509 104.147H686V211C686 211 515.882 163.66 343.002 163.66C170.123 163.66 0.00431509 211 0.00431509 211V104.147Z"
+                    fill="url(#paint0_linear_59_22)"
+                />
+                <path
+                    d="M0 106.853H685.996V0C685.996 0 515.878 47.3397 342.998 47.3397C170.118 47.3397 0 0 0 0V106.853Z"
+                    fill="url(#paint1_linear_59_22)"
+                />
+                <defs>
+                    <linearGradient
+                        id="paint0_linear_59_22"
+                        x1="0"
+                        y1="105.5"
+                        x2="686"
+                        y2="105.5"
+                        gradientUnits="userSpaceOnUse"
+                    >
+                        <stop stop-color="#7C3AED" />
+                        <stop offset="0.5" stop-color="#BE9DF6" />
+                        <stop offset="1" stop-color="#7C3AED" />
+                    </linearGradient>
+                    <linearGradient
+                        id="paint1_linear_59_22"
+                        x1="0"
+                        y1="105.5"
+                        x2="686"
+                        y2="105.5"
+                        gradientUnits="userSpaceOnUse"
+                    >
+                        <stop stop-color="#7C3AED" />
+                        <stop offset="0.5" stop-color="#BE9DF6" />
+                        <stop offset="1" stop-color="#7C3AED" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <!-- SERVICIOS -->
+        <section
+            id="servicios"
+            class="flex flex-col items-center justify-center max-w-[1600px] px-8 sm:px-12 lg:px-12 xl-px-32 space-y-24 sm:space-y-28"
+        >
+            <!-- class="flex flex-col items-center max-w-[1600px] pb-6 mt-20 sm:mt-36 lg:mt-32 px-8 space-y-5 sm:py-10 sm:px-12 sm:space-y-9 lg:px-12 xl:px-32" -->
+
+            <h3 class="text-3xl text-center font-medium">
+                Aumenta tu <span class="text-primary">impacto digital</span> con nuestros servicios
+            </h3>
+            <!-- LANDING PAGES -->
+            <div class="flex flex-col lg:flex-row items-center !mt-10">
+                <div class="mb-6 lg:w-2/5 sm:px-12 sm:space-y-9 lg:px-32">
+                    <img
+                        src="../images/servicios-landing.svg"
+                        alt="Ilustración"
+                        class="w-full h-auto"
+                        style="max-height: 70%"
+                    />
+                </div>
+                <div class="lg:w-3/5 text-center lg:text-left">
+                    <h3 class="text-2xl font-medium mb-4">Landing Pages que Convierten</h3>
+                    <p class="text-gray-600 mb-6">
+                        Lanza landing pages diseñadas para captar la atención y convertir visitas en clientes. Con un
+                        diseño centrado en el usuario y una optimización avanzada, hacemos que cada click cuente.
+                    </p>
+                    <button
+                        href="#"
+                        class="inline-block w-full px-6 py-3 bg-primary text-white rounded-md hover:bg-primary-400 transition-colors duration-300"
+                    >
+                        Convierte más con una landing page diseñada para resultados.
+                    </button>
+                </div>
+            </div>
+            <!-- SITIOS CORPORATIVOS  -->
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="mb-6 lg:w-2/5 sm:px-12 sm:space-y-9 lg:px-32">
+                    <img
+                        src="../images/servicios-corp.svg"
+                        alt="Ilustración"
+                        class="w-full h-auto"
+                        style="max-height: 70%"
+                    />
+                </div>
+                <div class="lg:w-3/5 text-center lg:text-left">
+                    <h3 class="text-2xl font-medium mb-4">Sitios Corporativos a Medida</h3>
+                    <p class="text-gray-600 mb-6">
+                        Haz que tu empresa destaque con un sitio web corporativo elegante, profesional y adaptado a tus
+                        necesidades. Proyecta la mejor versión de tu marca, aumenta la confianza y conecta mejor con tus
+                        clientes.
+                    </p>
+                    <button
+                        href="#"
+                        class="inline-block px-6 py-3 bg-primary text-white rounded-md hover:bg-primary-400 transition-colors duration-300"
+                    >
+                        Haz que tu empresa se vea y se sienta increíble en línea.
+                    </button>
+                </div>
+            </div>
+            <!-- Aplicaciones Web Escalables -->
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="mb-6 lg:w-2/5 sm:px-12 sm:space-y-9 lg:px-32">
+                    <img
+                        src="../images/servicios-escalables.svg"
+                        alt="Ilustración"
+                        class="w-full h-auto"
+                        style="max-height: 70%"
+                    />
+                </div>
+                <div class="lg:w-3/5 text-center lg:text-left">
+                    <h3 class="text-2xl font-medium mb-4">Aplicaciones Web Escalables</h3>
+                    <p class="text-gray-600 mb-6">
+                        Construimos aplicaciones web dinámicas y escalables que evolucionan con tu negocio. Desde
+                        funcionalidades avanzadas hasta experiencias interactivas, nuestras soluciones se adaptan a tus
+                        necesidades mientras creces.
+                    </p>
+                    <button
+                        href="#"
+                        class="inline-block px-6 py-3 bg-primary text-white rounded-md hover:bg-primary-400 transition-colors duration-300"
+                    >
+                        Lleva tu negocio al siguiente nivel con una aplicación web hecha para crecer.
+                    </button>
+                </div>
+            </div>
+            <!--E-COMMERCE  -->
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="mb-6 lg:w-2/5 sm:px-12 sm:space-y-9 lg:px-32">
+                    <img
+                        src="../images/servicios-e-commerce.svg"
+                        alt="Ilustración"
+                        class="w-full h-auto"
+                        style="max-height: 70%"
+                    />
+                </div>
+                <div class="lg:w-3/5 text-center lg:text-left">
+                    <h3 class="text-2xl font-medium mb-4">E-Commerce Personalizado</h3>
+                    <p class="text-gray-600 mb-6">
+                        Desarrollamos tiendas online robustas y personalizadas que convierten visitantes en compradores.
+                        Desde la gestión de productos hasta la pasarela de pagos, te ofrecemos una solución completa
+                        para que vendas más.
+                    </p>
+                    <button
+                        href="#"
+                        class="inline-block px-6 py-3 bg-primary text-white rounded-md hover:bg-primary-400 transition-colors duration-300"
+                    >
+                        Convierte más con una landing page diseñada para resultados.
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- DIVIDER -->
+        <div class="relative w-full overflow-hidden flex flex-col justify-start my-6">
+            <svg
+                class="w-full h-20 sm:h-24 md:h-36 lg:h-40 xl:h-36"
+                viewBox="0 0 686 211"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="none"
+            >
+                <path
+                    d="M0.00431509 104.147H686V211C686 211 515.882 163.66 343.002 163.66C170.123 163.66 0.00431509 211 0.00431509 211V104.147Z"
+                    fill="url(#paint0_linear_59_22)"
+                />
+                <path
+                    d="M0 106.853H685.996V0C685.996 0 515.878 47.3397 342.998 47.3397C170.118 47.3397 0 0 0 0V106.853Z"
+                    fill="url(#paint1_linear_59_22)"
+                />
+                <defs>
+                    <linearGradient
+                        id="paint0_linear_59_22"
+                        x1="0"
+                        y1="105.5"
+                        x2="686"
+                        y2="105.5"
+                        gradientUnits="userSpaceOnUse"
+                    >
+                        <stop stop-color="#7C3AED" />
+                        <stop offset="0.5" stop-color="#BE9DF6" />
+                        <stop offset="1" stop-color="#7C3AED" />
+                    </linearGradient>
+                    <linearGradient
+                        id="paint1_linear_59_22"
+                        x1="0"
+                        y1="105.5"
+                        x2="686"
+                        y2="105.5"
+                        gradientUnits="userSpaceOnUse"
+                    >
+                        <stop stop-color="#7C3AED" />
+                        <stop offset="0.5" stop-color="#BE9DF6" />
+                        <stop offset="1" stop-color="#7C3AED" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <!-- CONTACTO -->
+
+        <section
+            class="flex flex-col items-center justify-center max-w-[1600px] px-8 sm:px-12 lg:px-12 xl-px-32 space-y-24 sm:space-y-28"
+        >
+            <h3 class="text-3xl text-center font-medium">
+                Estamos listos para darle <span class="text-primary">vida</span> a tu proyecto.
+                <span class="text-primary">¿Empezamos?</span>
+            </h3>
+        </section>
+
+        <!-- WHATSAPP -->
+        <div class="fixed z-[99999] h-14 w-14 bottom-4 right-4 bg-[#25D366] rounded-full p-3">
+            <img src="../images/whatsapp.svg" alt="icono whatsapp" />
+        </div>
+        <script src="./js/navbar.js"></script>
+    </body>
+</html>
