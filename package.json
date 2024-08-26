@@ -4,7 +4,8 @@
     "private": true,
     "scripts": {
         "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
-        "build": "npm install npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+        "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+        "install": "npm install"
     },
     "devDependencies": {
         "tailwindcss": "^3.4.9"
