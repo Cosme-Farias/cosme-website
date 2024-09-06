@@ -29,7 +29,7 @@
                         id="nav-list"
                         class="bg-main-gradient h-full w-4/5 max-w-72 py-4 px-4 flex flex-col justify-start items-start sm:max-w-none sm:justify-between sm:items-center text-coal sm:bg-none sm:w-full sm:p-0"
                     >
-                        <img class="h-auto w-full mx-auto sm:hidden" src="../icons/logo-full-primary.svg" alt="" />
+                        <img class="h-auto w-full mx-auto sm:hidden" src="./icons/logo-full-primary.svg" alt="" />
                         <ul
                             class="mt-8 flex flex-col w-full sm:flex-row sm:mt-0 sm:justify-center sm:gap-4 md:gap-10 lg:gap-12"
                         >
@@ -330,6 +330,31 @@
                 Estamos listos para darle <span class="text-primary">vida</span> a tu proyecto.
                 <span class="text-primary">¿Empezamos?</span>
             </h3>
+            <div class="flex flex-col w-full bg-primary-50">
+                <div class="">
+                    <img src="./images/contact.svg" alt="" />
+                </div>
+                <div>
+                    <form
+                        class="flex flex-col justify-center"
+                        action="https://formsubmit.co/5b2398ee1a94dc9ce68ebbede8b3af0c"
+                        method="POST"
+                    >
+                        <label for="name">
+                            Nombre:
+                            <input type="text" name="name" id="name" required />
+                        </label>
+                        <label for="email">
+                            Email:
+                            <input type="text" name="email" id="email" required /> </label
+                        ><label for="message">
+                            Mensaje:
+                            <textarea name="message" id="message" required> </textarea>
+                        </label>
+                        <input type="submit" class="" value="Enviar" />
+                    </form>
+                </div>
+            </div>
         </section>
 
         <!-- WHATSAPP -->
