@@ -6,6 +6,7 @@ module.exports = {
                 primary: '#7C3AED',
                 'primary-400': '#894eef',
                 'primary-300': '#9661f1',
+                'primary-100': '#e5d8fb',
                 'primary-50': '#f2ebfd',
                 coal: '#232323',
                 gray: '#4A4A4A',
